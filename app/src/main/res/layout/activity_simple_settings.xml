@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="設定"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000" />
+
+    <!-- Text Size Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文字大小"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8sp"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <SeekBar
+            android:id="@+id/seekbar_text_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:max="40"
+            android:progress="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="48sp"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_text_size_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16sp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000" />
+
+    <!-- Position Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="顯示位置"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radio_top_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="左上角"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radio_top_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中央上方"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radio_top_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="右上角"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="#000000" />
+
+    </RadioGroup>
+
+    <!-- Preview Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="預覽"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F0F0F0"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔋 85% | 14:30"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#80000000"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="套用"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重設"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Info OSD</string>
+    <string name="settings_title">設定</string>
+    <string name="app_description">INFO OSD 是一個可以以 OSD 方式顯示現在的時間與剩餘電量的小工具程式，完全免費！</string>
+    
+    <!-- Main Activity -->
+    <string name="main_title">Info OSD</string>
+    <string name="service_status">服務狀態</string>
+    <string name="service_running">運行中</string>
+    <string name="service_stopped">已停止</string>
+    <string name="start_service">啟動服務</string>
+    <string name="stop_service">停止服務</string>
+    <string name="open_settings">設定</string>
+    <string name="about">關於</string>
+    
+    <!-- Settings -->
+    <string name="text_size">文字大小</string>
+    <string name="text_color">文字顏色</string>
+    <string name="background_color">背景顏色</string>
+    <string name="display_position">顯示位置</string>
+    <string name="position_top_left">左上角</string>
+    <string name="position_top_center">上方中央</string>
+    <string name="position_top_right">右上角</string>
+    <string name="preview">預覽</string>
+    <string name="apply">套用</string>
+    <string name="reset">重設</string>
+    
+    <!-- Permissions -->
+    <string name="permission_required">需要權限</string>
+    <string name="overlay_permission_message">此應用需要懸浮窗權限才能在螢幕上顯示資訊。</string>
+    <string name="grant_permission">授予權限</string>
+    <string name="permission_denied">權限被拒絕。沒有懸浮窗權限，應用無法正常運作。</string>
+    
+    <!-- Service -->
+    <string name="service_notification_title">Info OSD 正在運行</string>
+    <string name="service_notification_text">顯示電池和時間資訊</string>
+    
+    <!-- About -->
+    <string name="about_text">Info OSD 在螢幕懸浮窗中顯示電池電量和當前時間。\n\n版本 0.1\n\n作者：廖阿輝\n網站：https://ahui3c.com\n信箱：chehui@gmail.com\n\nFB 粉絲團與 Youtube 可以搜尋\n3C 達人廖阿輝</string>
+    
+    <!-- Sample display text -->
+    <string name="sample_display_text">🔋 85% | 14:30</string>
+    
+    <!-- Screenshot -->
+    <string name="screenshot_permission_title">截圖權限</string>
+    <string name="screenshot_permission_message">需要螢幕錄製權限才能進行截圖</string>
+    <string name="screenshot_success">截圖成功</string>
+    <string name="screenshot_failed">截圖失敗</string>
+    <string name="screenshot_saved_gallery">截圖已保存到相簿</string>
+    <string name="screenshot_saved_app">截圖已保存到應用目錄</string>
+</resources>
+

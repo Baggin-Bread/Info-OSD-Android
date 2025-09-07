@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.infoosd">
+
+    <!-- 基本權限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    
+    <!-- Android 14+ 前台服務權限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    
+    <!-- 截圖相關權限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    
+    <!-- 存儲權限 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" 
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+
+        <!-- 主要活動 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 設定活動 -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="設定"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 最小化截圖權限請求活動 -->
+        <activity
+            android:name=".MinimalScreenshotActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:finishOnTaskLaunch="true" />
+
+        <!-- 超級安全截圖權限請求活動 -->
+        <activity
+            android:name=".UltraSafeScreenshotActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:finishOnTaskLaunch="true" />
+
+        <!-- 簡化截圖權限請求活動 -->
+        <activity
+            android:name=".SimpleScreenshotActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true" />
+
+        <!-- 截圖權限請求活動 -->
+        <activity
+            android:name=".ScreenshotPermissionActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true" />
+
+        <!-- 測試活動 -->
+        <activity
+            android:name=".TestActivity"
+            android:exported="false"
+            android:label="測試"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 簡單設定活動 -->
+        <activity
+            android:name=".SimpleSettingsActivity"
+            android:exported="false"
+            android:label="簡單設定"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 增強設定活動 -->
+        <activity
+            android:name=".EnhancedSettingsActivity"
+            android:exported="false"
+            android:label="增強設定"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- 設定活動（簡化版） -->
+        <activity
+            android:name=".SettingsActivitySimple"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- OSD 覆蓋層服務 -->
+        <service
+            android:name=".OverlayService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
+        <!-- 最小化截圖服務 -->
+        <service
+            android:name=".MinimalScreenshotService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- 超級安全截圖服務 -->
+        <service
+            android:name=".UltraSafeScreenshotService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- 簡化截圖服務 -->
+        <service
+            android:name=".SimpleScreenshotService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- 截圖服務 -->
+        <service
+            android:name=".ScreenshotService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- 截圖管理器服務 -->
+        <service
+            android:name=".ScreenshotManager"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!-- 開機啟動接收器 -->
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 電池狀態接收器 -->
+        <receiver
+            android:name=".BatteryReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
+
