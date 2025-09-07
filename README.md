@@ -1,10 +1,56 @@
 # Info OSD - Android 螢幕資訊顯示工具
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
-[![API](https://img.shields.io/badge/API-24%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=24)
+<div align="center">
+  <img src="screenshots/app_icon.png" alt="Info OSD 應用圖示" width="120" height="120">
+  
+  <h3>🔋 電池電量 | ⏰ 時間顯示 | 📸 截圖功能</h3>
+  
+  <p>
+    <strong>Info OSD 是一個可以以 OSD 方式顯示現在的時間與剩餘電量的小工具程式，完全免費！</strong>
+  </p>
+  
+  <p>
+    <a href="https://github.com/ahui3c/Info-OSD-Android/releases/latest">
+      <img src="https://img.shields.io/github/v/release/ahui3c/Info-OSD-Android?style=for-the-badge&logo=android&logoColor=white&color=green" alt="最新版本">
+    </a>
+    <a href="https://github.com/ahui3c/Info-OSD-Android/releases/latest">
+      <img src="https://img.shields.io/github/downloads/ahui3c/Info-OSD-Android/total?style=for-the-badge&logo=download&logoColor=white&color=blue" alt="下載次數">
+    </a>
+    <a href="https://github.com/ahui3c/Info-OSD-Android/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/ahui3c/Info-OSD-Android?style=for-the-badge&color=orange" alt="授權">
+    </a>
+  </p>
+</div>
 
-Info OSD 是一個輕量級的 Android 應用程式，可以在螢幕上以懸浮窗形式顯示電池電量和當前時間，並提供截圖功能。
+---
+
+## 📱 應用截圖
+
+### 🏠 OSD 顯示效果
+<div align="center">
+  <img src="screenshots/osd_display_home.png" alt="主畫面 OSD 顯示" width="300">
+  <img src="screenshots/osd_display_apps.png" alt="應用列表 OSD 顯示" width="300">
+  
+  <p><em>在任何畫面都能清楚顯示電池電量和當前時間</em></p>
+</div>
+
+### 🎮 應用界面
+<div align="center">
+  <img src="screenshots/main_interface.png" alt="主界面" width="300">
+  <img src="screenshots/settings_interface.png" alt="設定界面" width="300">
+  
+  <p><em>簡潔直觀的中文界面，輕鬆管理所有功能</em></p>
+</div>
+
+### 📸 截圖功能展示
+<div align="center">
+  <img src="screenshots/screenshot_demo.png" alt="截圖功能演示" width="300">
+  <img src="screenshots/screenshot_help.png" alt="截圖功能說明" width="300">
+  
+  <p><em>點擊 OSD 即可觸發截圖，自動保存到系統相簿</em></p>
+</div>
+
+---
 
 ## 📱 功能特色
 
