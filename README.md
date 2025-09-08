@@ -24,49 +24,93 @@
 
 ---
 
+## 🌐 語言選擇 / Language
+
+- **繁體中文** | [English](README_EN.md)
+
+---
+
 ## 📱 應用截圖
 
 ### 🏠 OSD 顯示效果
+在任何畫面都能清楚顯示電池電量和當前時間，不干擾正常使用
+
 <div align="center">
-  <img src="screenshots/osd_display_home.png" alt="主畫面 OSD 顯示" width="300">
-  <img src="screenshots/osd_display_apps.png" alt="應用列表 OSD 顯示" width="300">
-  
-  <p><em>在任何畫面都能清楚顯示電池電量和當前時間</em></p>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="screenshots/osd_display_home.png" alt="主畫面 OSD 顯示" width="280">
+        <br>
+        <sub><b>主畫面顯示</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/osd_display_apps.png" alt="應用列表 OSD 顯示" width="280">
+        <br>
+        <sub><b>應用列表顯示</b></sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ### 🎮 應用界面
+簡潔直觀的中文界面，輕鬆管理所有功能
+
 <div align="center">
-  <img src="screenshots/main_interface.png" alt="主界面" width="300">
-  <img src="screenshots/settings_interface.png" alt="設定界面" width="300">
-  
-  <p><em>簡潔直觀的中文界面，輕鬆管理所有功能</em></p>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="screenshots/main_interface.png" alt="主界面" width="280">
+        <br>
+        <sub><b>主界面</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/settings_interface.png" alt="設定界面" width="280">
+        <br>
+        <sub><b>設定界面</b></sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ### 📸 截圖功能展示
+點擊 OSD 即可觸發截圖，自動保存到系統相簿
+
 <div align="center">
-  <img src="screenshots/screenshot_demo.png" alt="截圖功能演示" width="300">
-  <img src="screenshots/screenshot_help.png" alt="截圖功能說明" width="300">
-  
-  <p><em>點擊 OSD 即可觸發截圖，自動保存到系統相簿</em></p>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="screenshots/screenshot_demo.png" alt="截圖功能演示" width="280">
+        <br>
+        <sub><b>遊戲中截圖演示</b></sub>
+      </td>
+      <td align="center">
+        <img src="screenshots/screenshot_help.png" alt="截圖功能說明" width="280">
+        <br>
+        <sub><b>截圖功能說明</b></sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
 
-## 📱 功能特色
+## ✨ 功能特色
 
-### 核心功能
+### 🎯 核心功能
 - **🔋 電池電量顯示** - 實時顯示電池電量百分比
 - **⏰ 時間顯示** - 顯示當前時間（24小時制）
 - **📸 截圖功能** - 點擊 OSD 觸發截圖，自動保存到系統相簿
 - **⚙️ 自定義設置** - 可調整文字大小、顏色和顯示位置
 - **🔐 權限管理** - 智能的動態權限請求和管理
 
-### 用戶體驗
+### 🌟 用戶體驗
 - **🌏 完整中文化** - 所有界面元素都是繁體中文
 - **🎨 專業圖示** - 精美的應用圖示設計
 - **📱 系統整合** - 完美整合系統相簿、瀏覽器和郵件
 - **🚀 低資源消耗** - 高效的服務實現，不影響系統性能
 - **💯 完全免費** - 無廣告、無內購、無使用限制
+
+---
 
 ## 🛠️ 技術規格
 
@@ -82,6 +126,24 @@
 - **前台服務** - 確保 OSD 穩定運行
 - **動態權限** - 智能的權限請求管理
 - **多密度支援** - 適配各種螢幕解析度
+
+---
+
+## 🚀 快速開始
+
+### 📥 下載安裝
+1. **下載 APK** - 從 [Releases 頁面](https://github.com/ahui3c/Info-OSD-Android/releases/latest) 下載最新版本
+2. **安裝應用** - 允許未知來源安裝，然後安裝 APK 檔案
+3. **授予權限** - 首次啟動時授予懸浮窗顯示權限
+4. **開始使用** - 點擊「啟動服務」按鈕即可開始使用
+
+### 🎮 使用說明
+1. **啟動服務** - 在主界面點擊「啟動服務」
+2. **查看 OSD** - 螢幕上會顯示電池電量和時間
+3. **截圖功能** - 點擊 OSD 區域即可觸發截圖
+4. **自定義設置** - 在設定頁面調整顯示選項
+
+---
 
 ## 🏗️ 專案結構
 
@@ -118,7 +180,9 @@ InfoOSD/
 └── DEVELOPMENT.md                            # 開發指南
 ```
 
-## 🚀 快速開始
+---
+
+## 🔧 開發指南
 
 ### 環境準備
 1. **Android Studio** - 建議使用最新版本
@@ -128,8 +192,8 @@ InfoOSD/
 ### 構建步驟
 1. **克隆專案**
    ```bash
-   git clone https://github.com/yourusername/InfoOSD.git
-   cd InfoOSD
+   git clone https://github.com/ahui3c/Info-OSD-Android.git
+   cd Info-OSD-Android
    ```
 
 2. **配置 Android SDK**
@@ -148,140 +212,18 @@ InfoOSD/
    ./gradlew installDebug
    ```
 
-### 開發環境設定
-詳細的開發環境設定請參考 [DEVELOPMENT.md](DEVELOPMENT.md)
+### 詳細開發指南
+更多開發資訊請參考：
+- [開發指南 (DEVELOPMENT.md)](DEVELOPMENT.md) | [English Version](DEVELOPMENT_EN.md)
+- [構建指南 (BUILD.md)](BUILD.md) | [English Version](BUILD_EN.md)
+- [專案結構 (PROJECT_STRUCTURE.md)](PROJECT_STRUCTURE.md) | [English Version](PROJECT_STRUCTURE_EN.md)
 
-## 📖 使用說明
-
-### 首次使用
-1. **安裝應用** - 安裝 APK 文件到 Android 設備
-2. **授予權限** - 允許懸浮窗顯示權限
-3. **啟動服務** - 點擊「啟動服務」按鈕
-4. **自定義設置** - 根據需要調整顯示設置
-
-### 截圖功能
-1. **點擊 OSD** - 點擊螢幕上的 OSD 顯示
-2. **授予權限** - 首次使用時授予媒體投影權限
-3. **查看截圖** - 截圖自動保存到系統相簿的 Screenshots 文件夾
-
-### 設定選項
-- **文字大小** - 調整 OSD 文字的大小
-- **文字顏色** - 選擇 OSD 文字的顏色
-- **顯示位置** - 設定 OSD 在螢幕上的位置
-
-## 🔧 開發指南
-
-### 核心組件
-
-#### OverlayService
-負責 OSD 懸浮窗的顯示和管理：
-```java
-public class OverlayService extends Service {
-    // OSD 視圖管理
-    // 電池狀態監聽
-    // 時間更新邏輯
-    // 點擊事件處理
-}
-```
-
-#### MinimalScreenshotService
-處理截圖功能的核心服務：
-```java
-public class MinimalScreenshotService extends Service {
-    // MediaProjection 管理
-    // VirtualDisplay 創建
-    // 圖像捕獲和保存
-    // 系統相簿整合
-}
-```
-
-#### SettingsManager
-管理應用設定的工具類：
-```java
-public class SettingsManager {
-    // SharedPreferences 操作
-    // 設定值的讀取和保存
-    // 預設值管理
-}
-```
-
-### 權限處理
-應用需要以下關鍵權限：
-- `SYSTEM_ALERT_WINDOW` - 懸浮窗顯示
-- `FOREGROUND_SERVICE_MEDIA_PROJECTION` - 截圖服務
-- `READ_MEDIA_IMAGES` - 讀取媒體文件
-
-### 截圖流程
-1. **權限請求** - 通過 MediaProjectionManager 請求權限
-2. **服務啟動** - 啟動前台截圖服務
-3. **虛擬顯示** - 創建 VirtualDisplay 捕獲螢幕
-4. **圖像處理** - 使用 ImageReader 獲取圖像數據
-5. **文件保存** - 通過 MediaStore API 保存到相簿
-
-## 🎨 自定義開發
-
-### 添加新功能
-1. **創建新的 Service** - 繼承 Service 類
-2. **註冊到 Manifest** - 在 AndroidManifest.xml 中註冊
-3. **實現業務邏輯** - 編寫具體功能代碼
-4. **更新 UI** - 在設定頁面添加相關選項
-
-### 修改 OSD 樣式
-編輯 `OverlayService.java` 中的視圖創建邏輯：
-```java
-private void createOverlayView() {
-    // 自定義 OSD 外觀
-    // 修改布局、顏色、字體等
-}
-```
-
-### 擴展設定選項
-在 `SettingsActivity.java` 和 `SettingsManager.java` 中添加新的設定項目。
-
-## 🧪 測試
-
-### 單元測試
-```bash
-./gradlew test
-```
-
-### 設備測試
-```bash
-./gradlew connectedAndroidTest
-```
-
-### 手動測試清單
-- [ ] OSD 顯示正常
-- [ ] 電池電量更新
-- [ ] 時間顯示準確
-- [ ] 截圖功能正常
-- [ ] 設定保存生效
-- [ ] 權限請求正常
-- [ ] 開機自啟動
-
-## 📦 發布
-
-### 構建發布版本
-```bash
-./gradlew assembleRelease
-```
-
-### 簽名配置
-在 `app/build.gradle` 中配置簽名：
-```gradle
-android {
-    signingConfigs {
-        release {
-            storeFile file('your-keystore.jks')
-            storePassword 'your-store-password'
-            keyAlias 'your-key-alias'
-            keyPassword 'your-key-password'
-        }
-    }
-}
-```
+---
 
 ## 🤝 貢獻指南
+
+我們歡迎各種形式的貢獻！請參考：
+- [貢獻指南 (CONTRIBUTING.md)](CONTRIBUTING.md) | [English Version](CONTRIBUTING_EN.md)
 
 ### 如何貢獻
 1. **Fork 專案** - 創建專案的分支
@@ -290,12 +232,6 @@ android {
 4. **推送分支** - `git push origin feature/new-feature`
 5. **創建 Pull Request** - 提交合併請求
 
-### 代碼規範
-- 使用 Java 8+ 語法
-- 遵循 Android 開發最佳實踐
-- 添加適當的註釋和文檔
-- 確保代碼通過所有測試
-
 ### 問題回報
 請使用 GitHub Issues 回報問題，包含：
 - 設備型號和 Android 版本
@@ -303,9 +239,13 @@ android {
 - 重現步驟
 - 相關的日誌信息
 
+---
+
 ## 📄 授權
 
 本專案採用 MIT 授權條款 - 詳見 [LICENSE](LICENSE) 文件
+
+---
 
 ## 👨‍💻 作者
 
@@ -314,9 +254,13 @@ android {
 - 信箱: [chehui@gmail.com](mailto:chehui@gmail.com)
 - 社群: FB 粉絲團與 Youtube 搜尋「3C 達人廖阿輝」
 
+---
+
 ## 🙏 致謝
 
 感謝所有為這個專案做出貢獻的開發者和使用者。
+
+---
 
 ## 📚 相關資源
 
@@ -325,8 +269,10 @@ android {
 - [MediaProjection API](https://developer.android.com/reference/android/media/projection/MediaProjection)
 - [Foreground Services](https://developer.android.com/guide/components/foreground-services)
 
-### 第三方庫
-本專案主要使用 Android 原生 API，未依賴第三方庫，確保應用的輕量和穩定。
+### 專案文檔
+- [版本更新日誌 (CHANGELOG.md)](CHANGELOG.md) | [English Version](CHANGELOG_EN.md)
+
+---
 
 ## 🔄 版本歷史
 
@@ -338,6 +284,8 @@ android {
 - ✨ 完整中文化界面
 - ✨ 專業圖示設計
 - ✨ 系統相簿整合
+
+---
 
 ## 🚧 未來計劃
 
@@ -353,6 +301,8 @@ android {
 - [ ] 開發 Wear OS 版本
 - [ ] 國際化支援（多語言）
 
+---
+
 ## 📞 支援
 
 如果您在使用過程中遇到問題或有建議，歡迎：
@@ -362,5 +312,13 @@ android {
 
 ---
 
-**讓您的 Android 設備更加智能便捷！** 🚀
+<div align="center">
+  <h3>🚀 讓您的 Android 設備更加智能便捷！</h3>
+  
+  <p>
+    <a href="https://github.com/ahui3c/Info-OSD-Android/releases/latest">
+      <img src="https://img.shields.io/badge/下載-最新版本-brightgreen?style=for-the-badge&logo=android" alt="下載最新版本">
+    </a>
+  </p>
+</div>
 
