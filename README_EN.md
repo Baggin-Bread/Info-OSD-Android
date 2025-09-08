@@ -276,6 +276,12 @@ Thanks to all developers and users who have contributed to this project.
 
 ## 🔄 Version History
 
+### v0.2 (2025-09-08)
+- ✨ **Multi-language Interface Support** - Added Traditional Chinese, English, and Simplified Chinese
+- 🌐 Automatic language switching functionality
+- 📱 Complete internationalization resource structure
+- 🔄 Version upgrade and technical architecture optimization
+
 ### v0.1 (2025-09-07)
 - ✨ Initial release
 - ✨ OSD battery and time display functionality

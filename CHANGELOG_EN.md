@@ -5,6 +5,30 @@ This document records all important changes to the Info OSD project.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] - 2025-09-08
+
+### Added
+- ✨ **Multi-language Interface Support** - Added complete multi-language support system
+  - Traditional Chinese (default language)
+  - English
+  - Simplified Chinese (简体中文)
+- 🌐 **Automatic Language Switching** - Automatically selects corresponding interface based on system language settings
+- 📱 **Internationalization Resource Structure** - Established complete multi-language resource file architecture
+- 🔄 **Version Upgrade** - Application version upgraded to 0.2
+
+### Improved
+- 📚 **Multi-language Documentation** - All interface elements have corresponding multi-language translations
+- 🎯 **User Experience** - Provides localized experience for users of different languages
+- 🔧 **Technical Architecture** - Optimized resource file structure to support multi-language
+
+### Technical Details
+- versionCode: 2 → 3
+- versionName: "0.1" → "0.2"
+- Added language resource directories:
+  - `values-en/` - English resources
+  - `values-zh-rCN/` - Simplified Chinese resources
+- Updated version information in About page for all language versions
+
 ## [Unreleased]
 
 ### Planned Additions
